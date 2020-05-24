@@ -1,0 +1,8 @@
+@float: left, right, none;
+
+//float align
+each(@align, {
+    .float-@{value} {
+        float: @value !important;
+    }
+});

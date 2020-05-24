@@ -1,0 +1,47 @@
+
+@import '~ant-design-vue/dist/antd.less';
+@import './styleText.less';
+@import './styleMargin.less';
+@import './stylePadding.less';
+@import './styleWidthAndHeight.less';
+@import './styleFloat.less';
+
+@font-size-base: 16px;
+
+.d-inline-block {
+    display: inline-block !important;
+}
+
+// Center Anything Vertically
+.vertical-center {
+    margin: 0 !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    -ms-transform: translate(-50%, -50%) !important;
+    transform: translate(-50%, -50%) !important;
+  }
+
+blockquote {
+    font-size: 90%;
+    color: #697b8c;
+    border-left: 4px solid #ebedf0;
+    padding-left: .8em;
+    margin: 1em 0;
+}
+
+.spacer {
+    -webkit-box-flex: 1!important;
+    -ms-flex-positive: 1!important;
+    flex-grow: 1!important;
+}
+
+.v-markdown code {
+    box-shadow: none!important;
+    color: #c0341d!important;
+    background-color: #fbe5e1!important;
+    font-weight: 900;
+    border-radius: 3px;
+    padding: 3px;
+    font-size: 85%;
+}

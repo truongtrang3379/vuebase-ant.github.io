@@ -1,0 +1,39 @@
+each(range(12), {
+    //max width
+    .max-width-@{value} {
+        max-width: (@value * 100px) !important;
+    }
+    //max height
+    .max-height-@{value} {
+        max-height: (@value * 100px) !important;
+    }
+    //min width
+    .min-width-@{value} {
+        min-width: (@value * 100px) !important;
+    }
+    //min height
+    .min-height-@{value} {
+        min-height: (@value * 100px) !important;
+    }
+
+  }
+);
+each(range(10), {
+    //width %
+    .width-@{value} {
+        width: (@value * 10%) !important;
+    }
+    //height %
+    .height-@{value} {
+        height: (@value * 10%) !important;
+    }
+  }
+);
+
+.width-0 {
+    width: 0 !important;
+}
+//height %
+.height-0 {
+    height: 0 !important;
+}

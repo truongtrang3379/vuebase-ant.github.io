@@ -1,0 +1,43 @@
+@font-style: 900, 700, 500, 400, 300, 100, italic;
+@align: left, center, right;
+@transformed: lowercase, uppercase, capitalize;
+
+//font style
+each(@font-style, {
+    .font-@{value} {
+        font-weight: @value !important;
+    }
+});
+
+
+//align
+each(@align, {
+    //text align
+    .text-@{value} {
+        text-align: @value !important;
+    }
+});
+
+//transformed
+each(@transformed, {
+    //text align
+    .text-@{value} {
+        text-transform: @value !important;
+    }
+});
+
+each(range(12), {
+    // Text wrapping and overflow
+    .text-truncate-@{value}{
+        white-space: nowrap !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        max-width: (@value * 100px) !important;
+    }
+
+    //font size
+    .font-size-@{value}{
+        font-size: (@value * 3px) !important;
+    }
+  }
+);
