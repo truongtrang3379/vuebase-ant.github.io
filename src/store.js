@@ -1,3 +1,5 @@
 export default {
-	username: ''
+	email: '',
+	collapsed: false,
+	showSider: false
 }

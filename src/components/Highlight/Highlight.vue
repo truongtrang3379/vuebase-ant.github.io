@@ -2,13 +2,13 @@
   <pre v-highlightjs="sourcecode">
       <code class="html ma-0">
       </code>
-    </pre>
+  </pre>
 </template>
 
 <script>
 export default {
   name: "Highlight",
-  props: ["sourcecode"]
+  props: ["sourcecode"],
 };
 </script>
 

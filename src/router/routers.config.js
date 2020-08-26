@@ -1,4 +1,4 @@
-import BasicLayout from "@/components/Layout/BasicLayout.vue"
+import BasicLayout from "@/Layout/BasicLayout.vue"
 import Login from "@/view/login/Login.vue"
 import i18n from "@/i18n"
 const routes = [
